@@ -1,3 +1,4 @@
+#include "function.c"
 #include <stdio.h>
 
 int main(){
