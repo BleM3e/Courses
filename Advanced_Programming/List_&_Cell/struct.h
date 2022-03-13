@@ -11,7 +11,7 @@ struct cell{
 struct list{
     struct cell * t;    //tete
     struct cell * q;    //queue
-}
+};
 
 
 
