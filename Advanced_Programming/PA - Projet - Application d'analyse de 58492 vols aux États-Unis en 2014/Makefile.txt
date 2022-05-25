@@ -1,0 +1,26 @@
+TARGET= bin/project
+CFLAGS=-g -W -Wall -Wextra -O2
+SRC=$(wildcard src/*.c)
+OBJ=$(subst src/,obj/,$(subst .c,.o,$(SRC)))
+
+DIRS= bin obj
+
+default: $(TARGET)
+
+
+
+$(shell mkdir -p $(DIRS))
+
+obj/%.o: src/%.c
+	gcc $(CFLAGS) -c $< -o $@
+
+$(TARGET): $(OBJ)
+	gcc $^ -o $@
+
+
+
+.PHONY: clean
+clean:
+	rm -f $(OBJ)
+	rm -f $(TARGET)
+	rmdir $(DIRS)

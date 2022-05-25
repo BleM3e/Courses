@@ -1,0 +1,13 @@
+show-airports HA
+show-airlines LAX
+show-flights ATL 2-26
+show-flights SLC 4-17 1600 limit=5
+avg-flight-duration LAX JFK
+find-itinerary PHX SAN 12-15
+most-delayed-flights
+most-delayed-airlines
+changed-flights 5-15
+delayed-airline AA
+find-itinerary DEN MCI 2-15 1030 limit=4
+find-itinerary SAN JFK 6-15 1030 IAD 6-19 1215 SLC 6-21 SAN 6-25
+quit
